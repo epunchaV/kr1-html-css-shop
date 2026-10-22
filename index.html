@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Учебный интернет-магазин</title>
+  <title>Мебельный магазин «Дуб и Лён»</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
   <meta property="og:type" content="website">
@@ -14,7 +14,7 @@
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <a class="site-header__logo" href="index.html">Мебельный магазин «Дуб и Лён»</a>
 
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
@@ -41,30 +41,29 @@
 
   <main>
     <section class="hero">
-      <h1>Учебный интернет-магазин</h1>
+      <h1>Мебельный магазин «Дуб и Лён»</h1>
       <p>
-        Это стартовая страница учебного frontend-проекта.
-        В дальнейшем на её основе будет разработан многостраничный сайт
-        интернет-магазина или каталога услуг.
+        Столы, стулья, комоды и текстиль для дома, в котором хочется остаться.
+        Натуральные материалы, честные цены и доставка по всей России.
       </p>
       <a class="button" href="#popular">Перейти к товарам</a>
     </section>
     <section class="section" id="advantages">
-      <h2>Преимущества проекта</h2>
+      <h2>Почему выбирают нас</h2>
       <ul class="advantages-list">
-        <li>понятная HTML-структура;</li>
-        <li>семантические блоки страницы;</li>
-        <li>подключение внешнего CSS-файла;</li>
-        <li>подготовка к разработке многостраничного сайта.</li>
+        <li>Натуральные материал</li>
+        <li>Массив дуба, ясеня и лён — без вредных пропиток</li>
+        <li>Ручная сборка</li>
+        <li>Бережная доставка</li>
       </ul>
     </section>
     <section class="section" id="popular">
       <h2>Популярные товары</h2>
       <div class="products-grid">
         <article class="product-card product-card--featured">
-          <h3 class="product-card__title">Товар 1</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 1000 руб.</p>
+          <h3 class="product-card__title">Обеденный стол «Дуб»</h3>
+          <p class="product-card__description">Массив дуба, 160×90 см, натуральное масло.</p>
+          <p class="product-card__price">Цена: 8900 руб.</p>
           <button
             class="button product-card__button"
             type="button"
@@ -76,9 +75,9 @@
 
 
         <article class="product-card product-card--featured">
-          <h3 class="product-card__title">Товар 2</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 1500 руб.</p>
+          <h3 class="product-card__title">Стул «Лён»</h3>
+          <p class="product-card__description">Каркас из ясеня, обивка из льняного полотна.</p>
+          <p class="product-card__price">Цена: 2500 руб.</p>
           <button
             class="button product-card__button"
             type="button"
@@ -89,9 +88,9 @@
         </article>
 
         <article class="product-card product-card--featured">
-          <h3 class="product-card__title">Товар 3</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 2000 руб.</p>
+          <h3 class="product-card__title">Комод «Терра»</h3>
+          <p class="product-card__description">6 ящиков, доводчики Blum, массив ореха.</p>
+          <p class="product-card__price">Цена: 5700 руб.</p>
           <button
             class="button product-card__button"
             type="button"
@@ -103,15 +102,97 @@
       </div>
     </section>
 
-    <aside class="aside-info">
-      <h2>Информация для студентов</h2>
-      <p>
-        На следующих практических занятиях этот проект будет расширяться:
-        появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
-        БЭМ-структура и адаптивная версия сайта.
-      </p>
-    </aside>
+    <section class="section" id="reviews">
+        <h2 class="section__title">Отзывы покупателей</h2>
+
+      <ul class="reviews-list">
+        <li class="review-card">
+          <div class="review-card__head">
+            <span class="review-card__avatar" aria-hidden="true">А</span>
+            <div>
+              <p class="review-card__name">Анна К.</p>
+              <p class="review-card__date">12 марта 2026</p>
+            </div>
+          </div>
+          <p class="review-card__rating" aria-label="Оценка 5 из 5">★★★★★</p>
+          <p class="review-card__text">
+            Заказывали обеденный стол «Дуб». Привезли раньше срока, собрали за полчаса,
+            столешница идеально отшлифована. Пахнет настоящим деревом!
+          </p>
+        </li>
+
+        <li class="review-card">
+          <div class="review-card__head">
+            <span class="review-card__avatar" aria-hidden="true">М</span>
+            <div>
+              <p class="review-card__name">Михаил С.</p>
+              <p class="review-card__date">28 февраля 2026</p>
+            </div>
+          </div>
+          <p class="review-card__rating" aria-label="Оценка 5 из 5">★★★★★</p>
+          <p class="review-card__text">
+            Взяли шесть стульев «Лён». Обивка приятная, каркас крепкий, сборка без люфтов.
+            Менеджер помог подобрать оттенок под наш стол.
+          </p>
+        </li>
+
+        <li class="review-card">
+          <div class="review-card__head">
+            <span class="review-card__avatar" aria-hidden="true">Е</span>
+            <div>
+              <p class="review-card__name">Елена В.</p>
+              <p class="review-card__date">5 февраля 2026</p>
+            </div>
+          </div>
+          <p class="review-card__rating" aria-label="Оценка 4 из 5">★★★★☆</p>
+          <p class="review-card__text">
+            Комод отличный, ящики плавные. Немного дольше ждали доставку в наш город,
+            но результат того стоил. Рекомендую.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section section--alt" id="faq">
+      <h2 class="section__title">Часто задаваемые вопросы</h2>
+      <p class="section__subtitle">Не нашли ответ? Напишите нам — ответим в течение дня.</p>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary class="faq__question">Сколько идёт доставка?</summary>
+          <p class="faq__answer">
+            По Москве и Санкт-Петербургу — 1–2 дня, в регионы — от 3 до 7 дней.
+            Точную дату менеджер сообщит после оформления заявки.
+          </p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">Входит ли сборка в стоимость?</summary>
+          <p class="faq__answer">
+            Для крупных товаров (столы, комоды, шкафы) сборка включена в стоимость.
+            Для стульев и мелких изделий — по желанию, +500 ₽ за единицу.
+          </p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">Можно ли вернуть товар?</summary>
+          <p class="faq__answer">
+            Да, в течение 14 дней с момента получения, если товар не использовался
+            и сохранена упаковка. Индивидуальные заказы возврату не подлежат.
+          </p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">Есть ли рассрочка?</summary>
+          <p class="faq__answer">
+            Да, доступна рассрочка на 6 или 12 месяцев без переплаты.
+            Оформляется при заказе — уточните у менеджера.
+          </p>
+        </details>
+      </div>
+    </section>
   </main>
+
   <footer id="contacts">
     <p>&copy; 2026 Учебный проект. Все права защищены.</p>
     <p>Дисциплина: Фронтенд и бэкенд разработка</p>

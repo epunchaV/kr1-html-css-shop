@@ -4,18 +4,19 @@
 
 :root {
   /* Основные цвета проекта */
-  --color-bg: #ffffff;
-  --color-text: #222222;
-  --color-muted: #666666;
-  --color-primary: #0057b8;
-  --color-primary-dark: #003f86;
-  --color-border: #dddddd;
-  --color-surface: #f7f7f7;
-  --color-surface-accent: #eef5ff;
-  --color-danger: #b00020;
-  --color-success: #168a2f;
-  --color-success-bg: #eefaf0;
-  --color-white: #ffffff;
+  --color-bg: #fbf6ec;
+  --color-text: #111111;
+  --color-muted: #4a4034;
+  --color-primary: #9c6b3f;
+  --color-primary-dark: #6f4a28;
+  --color-border: #e3d4bd;
+  --color-surface: #f4ead9;
+  --color-surface-accent: #f8efdd;
+  --color-danger: #a3371f;
+  --color-success: #4d7a35;
+  --color-success-bg: #eef4e3;
+  --color-warm-accent: #c8a97a;
+  --color-warm-olive: #8a9464;
 
   /* Отступы */
   --space-xs: 4px;
@@ -181,7 +182,7 @@ a:focus-visible {
 }
 
 .site-nav__link:hover {
-  color: var(--color-white);
+  color: var(--color-surface);
   background-color: var(--color-primary);
 }
 
@@ -191,7 +192,7 @@ a:focus-visible {
 }
 
 .site-nav__link--active {
-  color: var(--color-white);
+  color: var(--color-surface);
   background-color: var(--color-primary);
 }
 
@@ -343,6 +344,127 @@ filters-form {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   font: inherit;
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.review-card__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.review-card__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-warm-accent);
+  color: #111111;
+  font-weight: 700;
+  font-size: 18px;
+  flex: 0 0 auto;
+}
+
+.review-card__name {
+  margin: 0;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.review-card__date {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.review-card__rating {
+  margin: 0;
+  color: #b8842a;
+  letter-spacing: 0.14em;
+  font-size: 16px;
+}
+
+.review-card__text {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 15px;
+}
+
+/* ---------- FAQ ---------- */
+
+.faq {
+  display: grid;
+  gap: var(--space-sm);
+  max-width: 860px;
+}
+
+.faq__item {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0 var(--space-md);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.faq__item[open] {
+  border-color: var(--color-primary);
+}
+
+.faq__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text);
+  list-style: none;
+}
+
+.faq__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq__question::after {
+  content: "+";
+  font-size: 22px;
+  line-height: 1;
+  color: var(--color-primary);
+  transition: transform 0.2s ease;
+  flex: 0 0 auto;
+}
+
+.faq__item[open] .faq__question::after {
+  transform: rotate(45deg);
+}
+
+.faq__answer {
+  margin: 0;
+  padding: 0 0 var(--space-md);
+  color: var(--color-muted);
+  font-size: 15px;
 }
 
 /* ===============================
